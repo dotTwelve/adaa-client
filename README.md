@@ -49,7 +49,7 @@ There is only one main interface:
 This interface is based on the Fluent API, thus it could be customized by calling particular
 Fluent API methods, e.g.:
 ```java
-PageSlice<AccountTransactions> result = accoutApi.transactions(iban, currency)
+PageSlice<AccountTransactions> result = accountApi.transactions(iban, currency)
         .fromDate(OffsetDateTime.of(LocalDateTime.of(2019, 10, 3, 23, 40), ZoneOffset.UTC))
         .size(3)
         .page(0)
